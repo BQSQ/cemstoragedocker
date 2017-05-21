@@ -1,6 +1,6 @@
 FROM centos:7
 RUN yum update
-RUN yum -y install gcc perl wget unzip make libpng-devel libjpeg-devel java-1.8.0-openjdk  java-1.8.0-openjdk-devel
+RUN yum -y install gcc perl wget unzip make libpng-devel libjpeg-devel java-1.8.0-openjdk  java-1.8.0-openjdk-devel openssh
 WORKDIR /opt
 RUN wget https://github.com/happyfish100/libfastcommon/archive/master.zip
 RUN unzip master.zip
