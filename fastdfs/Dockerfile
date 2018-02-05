@@ -3,7 +3,7 @@ FROM centos:6
 
 LABEL author="dingyongbiao"
 LABEL e-mail="dingyongbiao123@163.com"
-LABEL version="1.0"
+LABEL version="1.1"
 LABEL description="fastdfs docker provide storage service"
 
 
@@ -46,4 +46,4 @@ EXPOSE 22122 23000
 WORKDIR /runner
 COPY run.sh run.sh
 RUN chmod 755 *.sh
-CMD ["./run.sh"]
+CMD ["/runner/run.sh"]
