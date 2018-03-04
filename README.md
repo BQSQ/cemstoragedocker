@@ -1,8 +1,12 @@
 # Dockerfile
+
 主要是一些docker编译的文件
-## 快速创建自定义的Docker镜像   
+
+## 快速创建自定义的Docker镜像
+
 DockerFile分为四部分组成：基础镜像信、维护者信息、镜像操作指令和容器启动时执行指令，例如：
-```
+
+``` text
 #第一行必须指令基于的基础镜像
 From ubutu
 
@@ -17,4 +21,5 @@ RUN echo "\ndaemon off;">>/etc/ngnix/nignix.conf
 #容器启动时执行指令
 CMD /usr/sbin/ngnix
 ```
+
 [个人主页](http://fingersnow.cn)
