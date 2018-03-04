@@ -26,5 +26,3 @@ oracle/install
 ``` shell
 docker run -it -d --privileged=true --restart=always --name storage-test -p 22122:22122 -p 23000:23000 -v /home/fastdfs:/home/fastdfs fingersnow/storage
 ```
-
-
