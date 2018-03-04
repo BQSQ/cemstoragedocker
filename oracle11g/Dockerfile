@@ -11,7 +11,4 @@ RUN /assets/setup.sh
 EXPOSE 1521
 EXPOSE 8080
 
-VOLUME [ "/install" ]
-VOLUME [ "/opt/oracle/" ]
-
 CMD ["/assets/entrypoint.sh"]
