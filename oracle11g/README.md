@@ -20,9 +20,3 @@ oracle/install
 ## 容器使用
 
 [参考教程](http://fingersnow.cn/2018-01-27/docker%E8%87%AA%E5%8A%A8%E7%BC%96%E8%AF%91oracle11g/)
-
-启动命令示例
-
-``` shell
-docker run -it -d --privileged=true --restart=always --name storage-test -p 22122:22122 -p 23000:23000 -v /home/fastdfs:/home/fastdfs fingersnow/storage
-```
