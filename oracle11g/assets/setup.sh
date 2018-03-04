@@ -27,6 +27,8 @@ users () {
 	mkdir -p -m 755 /opt/oracle/oraInventory
 	mkdir -p -m 755 /opt/oracle/dpdump
 	chown -R oracle:oinstall /opt/oracle
+	mkdir -p -m 755 /install 
+	chown -R oracle:oinstall /install
 	cat /assets/profile >> ~oracle/.bash_profile
 	cat /assets/profile >> ~oracle/.bashrc
 
